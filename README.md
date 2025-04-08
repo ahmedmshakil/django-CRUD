@@ -13,4 +13,35 @@
  <!-- how to run  -->
  - cd crud
  - python3 manage.py runserver
- 
+
+ <!-- added new app folder -->
+ - cd crud
+ - django-admin startapp myapp
+
+``file instruction``
+ - crud is the root folder
+ - myapp is the application folder
+
+
+# root directory (CRUD )
+# django 5.2
+# crud
+# ├── crud  
+# │   ├── __init__.py
+# │   ├── settings.py
+# │   ├── urls.py
+# │   └── wsgi.py
+# ├── myapp
+# │   ├── __init__.py
+# │   ├── admin.py
+# │   ├── apps.py
+# │   ├── migrations
+# │   │   └── __init__.py
+# │   ├── models.py
+# │   ├── tests.py
+# │   └── views.py
+# ├── manage.py
+# └── templates
+#     └── index.html
+
+
