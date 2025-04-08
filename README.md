@@ -45,3 +45,10 @@
     └── index.html
 
 
+- python3 manage.py shell, it will go to interactive console of the database
+- from myapp.models import Student
+` it will print the database `
+- Student.objects.all()
+
+` fetch specific record `
+- s1 = Student.objects.get(name = "shakil")

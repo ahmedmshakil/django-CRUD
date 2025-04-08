@@ -1,0 +1,30 @@
+Creating FoodMenu Model:
+
+
+models.py
+from django.db import models
+
+class FoodMenu(models.Model):
+    item_name = models.CharField(max_length=255)  
+    description = models.TextField() 
+    price = models.DecimalField(max_digits=7, decimal_places=2)  
+    image_url = models.URLField(max_length=500)  
+
+    def __str__(self):
+        return self.item_name
+
+___________________________________________________________________________
+
+admin .py
+
+From .models import FoodMenu
+admin.site.register(FoodMenu)
+
+___________________________________________________________________________
+
+Commands to Execute:
+ 
+python manage.py makemigrations
+python manage.py migrate
+
+__________________________________________________________________________

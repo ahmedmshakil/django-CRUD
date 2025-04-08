@@ -23,8 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', views.hello),
     path('info/', views.info),
-    # path('', views.hello), # Default route to hello view
-    path('app/', include('myapp.urls')),  # Include URLs from myapp
+    path('',include('myapp.urls')),
 ]
 
 
